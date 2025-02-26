@@ -1,6 +1,6 @@
 import re
 
-keywords = {"PROC": "W7", "MAIN": "W9", "DCL": "W2", "DEC": "W1", "FIXED": "W4", "END": "W3"}
+keywords = {"DEC": "W1", "DCL": "W2", "END": "W3", "FIXED": "W4", "IF": "W6", "PROC": "W7","THEN": "W8" "MAIN": "W9",    }
 operators = {"+": "O1", "*": "O2", "<": "O3", ">": "O4", "=": "O5", ":": "O6", "<>": "O7"}
 delimiters = {" ": "R1", ",": "R2", ";": "R3", "(": "R4", ")": "R5", ".": "R6"}
 
@@ -22,7 +22,7 @@ def lexical_analyzer(code):
 
     return tokens
 
-code = "PROC MAIN; DCL (A1, A2) DEC FIXED; A1=378; A2=.73; END."
+code = "PROC MAIN; DCL (A1, A2) DEC FIXED; A1=378; A2=.73; PROC CALC; DCL (SUM, MULT) DEC FIXED; IF A1+A2<>3.2 THEN GOTO P; SUM=(A1+A2)*A2; P: MULT=A1*A2; END; END."
 tokens = lexical_analyzer(code)
 
 for token in tokens:
