@@ -1,8 +1,8 @@
 import re
 
 keywords = {"PROC": "W7", "MAIN": "W9", "DCL": "W2", "DEC": "W1", "FIXED": "W4", "END": "W3"}
-operators = {"=": "O5"}
-delimiters = {",": "R2", ";": "R3", "(": "R4", ")": "R5", ".": "R6"}
+operators = {"+": "O1", "*": "O2", "<": "O3", ">": "O4", "=": "O5", ":": "O6", "<>": "O7"}
+delimiters = {" ": "R1", ",": "R2", ";": "R3", "(": "R4", ")": "R5", ".": "R6"}
 
 def lexical_analyzer(code):
     tokens = []
