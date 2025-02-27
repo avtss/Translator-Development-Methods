@@ -1,6 +1,6 @@
 import re
 
-keywords = {"DEC": "W1", "DCL": "W2", "END": "W3", "FIXED": "W4", "IF": "W6", "PROC": "W7","THEN": "W8" "MAIN": "W9",    }
+keywords = {"DEC": "W1", "DCL": "W2", "END": "W3", "FIXED": "W4", "IF": "W6", "PROC": "W7","THEN": "W8", "MAIN": "W9",    }
 operators = {"+": "O1", "*": "O2", "<": "O3", ">": "O4", "=": "O5", ":": "O6", "<>": "O7"}
 delimiters = {" ": "R1", ",": "R2", ";": "R3", "(": "R4", ")": "R5", ".": "R6"}
 
